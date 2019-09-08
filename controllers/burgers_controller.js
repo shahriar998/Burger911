@@ -5,20 +5,27 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function (req, res) {
-    burger.selectAll(function (data) {
-        var hbsObject = {
-            burgers: data
-        };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
-    });
+    res.redirect("/");
 });
 
-router.post("/", function (req, res) {
-    burger.insertOne(req.body.burger_name, function () {
-        res.redirect("/");
-    });
+router.get("/burgers", function (req, res) {
+   burger.selectAll(function(data){
+    var allData = {
+        burger:data
+    }
+    console.log(allData)
+   })
+    
 });
+router.post("/api/burgers", function(req, res) {
+    burger.insertOne([
+      "burger_name", 
+    ], [
+      req.body.name, 
+    ], function(result) {
+      res.redirect("/burgers");
+    });
+  });
 
 router.put("/:id", function (req, res) {
     var id = req.params.id;
