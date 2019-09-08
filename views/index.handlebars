@@ -1,0 +1,26 @@
+<div class="container">
+
+    <br>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="text-center">Burger911! Have it before it ends</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6">
+            {{#each burgers}}
+            {{#unless this.devoured}}
+            <p>
+                {{this.id}}. {{this.burger_name}}
+                <button data-burgerid="{{this.id}}" class="Devour">Devour it!</button>
+            </p>
+            {{/unless}}
+            {{/each}}
+            </ul>
+        </div>
+
+    </div>
+
+</div
