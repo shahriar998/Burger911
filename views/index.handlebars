@@ -1,37 +1,42 @@
-<div class="container">
+<h1>Eat Da Burger, Eat it Now!</h1>
+<br>
 
-    <br>
+<div id='avail'>
+    <h2>Burgers Available to Eat:</h2>
+    <ul>
+        {{#each burgers}} {{#unless this.devoured}}
+        <li>
+            {{this.id}}. {{this.burger_name}}
 
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-        <h1 class="text-center">Burger911! Have it before it ends</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center enter_section">
-                    <form action="/burgers/create" method="POST">
-                        <input type="text" class="form-control" name="burger_name" value="" id="enter_text">
-                        <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
-                    </form>
-                    <p>Enter a burger you want to eat Click the "Submit" button.</p>
-                </div>
-            </div>
+            <form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="devoured" value="false">
+                <button class="btn btn-warning" type="submit">Eat Me!</button>
+            </form>
+
+        </li>
+        {{/unless}} {{/each}}
+    </ul>
+</div>
+<div id='devoured'>
+    <h2>Burgers That Have <br>Been Devoured: </h2>
+
+    <ul>
+        {{#each burgers}} {{#if this.devoured}}
+        <li>
+            {{this.id}}. {{this.burger_name}}
+        </li>
+        {{/if}} {{/each}}
+    </ul>
+</div>
+
+<div id='add'>
+    <h2>Add a Burger: </h2>
+
+    <form class="create-update-form" action="/" method="POST">
+        <div class="form-group">
+            <label for="dab">Burger Name:</label>
+            <input type="text" id="dab" name="burger_name">
         </div>
-    </div>
-
-    <div class="row">
-
-        <div class="col-lg-6">
-            {{#each burgers}}
-            {{#unless this.devoured}}
-            <p>
-                {{this.id}}. {{this.burger_name}}
-                <button data-burgerid="{{this.id}}" class="Devour">Devour it!</button>
-            </p>
-            {{/unless}}
-            {{/each}}
-            </ul>
-        </div>
-
-    </div>
-
-</div
+        <button class="btn btn-primary" type="submit">Add Burger</button>
+    </form>
+</div>
