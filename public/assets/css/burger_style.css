@@ -1,0 +1,36 @@
+.jumbotron {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.jumbotron > h1 {
+    font-family: 'Creepster', cursive;
+}
+
+.jumbotron > h2 {
+    font-family: 'Creepster', cursive;
+}
+
+#newburger {
+    border-radius: 5px;
+}
+
+#leftSection {
+    background-color:lightgoldenrodyellow;
+    color:darkorchid;
+    text-align: center;
+    font-size: 1em;
+}
+
+#eatbutton {
+    float: right;
+}
+
+#rightSection {
+    background-color: #f0ad4e;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}

@@ -1,7 +1,7 @@
 {
-  "name": "burger911",
+  "name": "eatdaburger",
   "version": "1.0.0",
-  "description": "Burger911! is a restaurant app that lets users input the names of burgers they'd like to eat",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,18 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shahriar998/Burger911.git"
+    "url": "git+https://github.com/GrissomErick/Eat-Da-Burger.git"
   },
-  "author": "Shahriar Bin Elias",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shahriar998/Burger911/issues"
+    "url": "https://github.com/GrissomErick/Eat-Da-Burger/issues"
   },
-  "homepage": "https://github.com/shahriar998/Burger911#readme",
+  "homepage": "https://github.com/GrissomErick/Eat-Da-Burger#readme",
   "dependencies": {
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
   }
 }
