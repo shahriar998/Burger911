@@ -1,8 +1,12 @@
 # Eat-Da-Burger
 Eat-Da-Burger - Assignment #14 (Node, Express, Handlebars)
 
+![image](./public/assets/img/app.png)
+
  
 **Project Description** - This burger app logger is created with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
+
+[APP DEMO](./public/assets/img/appdemo.gif)
 
 ## Application Heroku Link
 The link below will give you direct access to Eat-Da-Burger web application using your web browser via the Heroku web service. (NOTE: There will be a momentary delay when first accessing the Heroku servers.)
