@@ -1,18 +1,13 @@
-<div align="center">
-<img src="https://github.com/GrissomErick/Eat-Da-Burger/blob/master/public/assets/img/eatdaburger.png?raw=true" alt="Project logo"></img>
-</div>
-
 # Eat-Da-Burger
-UNC Coding Boot Camp - Eat-Da-Burger - Assignment #12 (Node, Express, Handlebars)
- <p></p>
+Eat-Da-Burger - Assignment #14 (Node, Express, Handlebars)
+
  
-**Project Description** - Eat-Da-Burger is a full-stack web application that ??.
+**Project Description** - This burger app logger is created with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
 ## Application Heroku Link
 The link below will give you direct access to Eat-Da-Burger web application using your web browser via the Heroku web service. (NOTE: There will be a momentary delay when first accessing the Heroku servers.)
 
-<!-- Heroku References: https://evening-ridge-94356.herokuapp.com/ | https://git.heroku.com/evening-ridge-94356.git -->
-* [Eat-Da-Burger](https://uncbc-eatdaburger.herokuapp.com/)
+* [Eat-Da-Burger](https://radiant-citadel-65410.herokuapp.com/)
 
 ## Local Environment Setup
 To use Eat-Da-Burger web application application from your local environment, you must accomplish the following steps below:
@@ -33,31 +28,8 @@ npm install
 ```
 node server.js
 ```
-
-## Technology used
-- node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
-- heroku-cli NPM Package - [https://www.npmjs.com/package/heroku-cli](https://www.npmjs.com/package/heroku-cli)
-- body-parser NPM Package - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
-- express NPM Package - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
-- path NPM Package - [https://www.npmjs.com/package/path](https://www.npmjs.com/package/path)
-
-<!--
-- node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
-- mysql NPM Package - [https://www.npmjs.com/package/mysql](https://www.npmjs.com/package/mysql)
-- inquirer NPM Package - [https://www.npmjs.com/package/inquirer](https://www.npmjs.com/package/inquirer)
-- cli-table NPM Package - [https://www.npmjs.com/package/cli-table](https://www.npmjs.com/package/cli-table)
-- heroku-cli NPM Package - [https://www.npmjs.com/package/heroku-cli](https://www.npmjs.com/package/heroku-cli)
-- express NPM Package - [https://www.npmjs.com/package/express](https://www.npmjs.com/package/express)
-- path - [https://www.npmjs.com/package/path](https://www.npmjs.com/package/path)
-- body-parser NPM Package - [https://www.npmjs.com/package/body-parser](https://www.npmjs.com/package/body-parser)
--->
-
-## Built With
-
-* VS Code - [https://code.visualstudio.com/](https://code.visualstudio.com/)
-* Git Tools - [https://git-scm.com/download](https://git-scm.com/download)
-* Live Markdown Editor - [https://jbt.github.io/markdown-editor/](https://jbt.github.io/markdown-editor/)
+```
 
 ## Author
 
-* **Erick Grissom** - *Node/Express/Handlebars* - [Erick Grissom Eat-Da-Burger Repo](https://github.com/GrissomErick/Eat-Da-Burger)
+Shahriar Bin Elias
